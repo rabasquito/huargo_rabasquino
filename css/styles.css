@@ -197,32 +197,37 @@ a.sombra:hover {
   color: #000;
 }
 
-/*
-.tabla{
-    font-family: 'Roboto', sans-serif;
-    font-size: 35px;
-    margin: auto;
+.tabla {
+  font-family: 'Roboto', sans-serif;
+  font-size: 35px;
+  margin: auto;
 }
-th{
-    background: #000;
-    color: #fff;
+
+th {
+  background: #000;
+  color: #fff;
 }
-.fila{
-    background: #9b9b9b;
+
+.fila {
+  background: #9b9b9b;
 }
-#horarios{
-    margin-top: 50px;
+
+#horarios {
+  margin-top: 50px;
 }
-.horario{
-    text-align: center;
-        }
-.horario p a{
-    color: #000;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: bold;
-}*/
+
+.horario {
+  text-align: center;
+}
+
+.horario p a {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 /*Galeria*/
 .slide {
   margin-top: 10px;
@@ -232,26 +237,28 @@ th{
   height: 65vh;
 }
 
-/*
-#galeria{
-    background-image: url(../images/slogan.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 940px;
+#galeria {
+  background-image: url(../images/slogan.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 940px;
 }
-.galeria{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
+
+.galeria {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
 }
-.galeria img{
-    width: 20%;
-    height: 300px;
-    margin: 10px;
-    border: 2px solid black;
-}*/
+
+.galeria img {
+  width: 20%;
+  height: 300px;
+  margin: 10px;
+  border: 2px solid black;
+}
+
 /*Shop*/
 .shop {
   height: 800px;
