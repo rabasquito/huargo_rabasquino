@@ -27,147 +27,66 @@
                 <li><a class="sombra" href="index.html">Inicio</a></li>
                 <li><a class="sombra" href="horarios.html">Horarios</a></li>
                 <li><a class="sombra" href="galeria.html">Galeria</a></li>
-                <li><a class="sombra" href="shop.html">Shop</a></li>
+                <li><a class="sombra" href="actividades.html">Actividades</a></li>
                 <li><a class="sombra" href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Hora</th>
-            <th scope="col">Lunes</th>
-            <th scope="col">Martes</th>
-            <th scope="col">Miércoles</th>
-            <th scope="col">Jueves</th>
-            <th scope="col">Viernes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">08:00-09:00</th>
-            <td></td>
-            <td style="background: #da1c1c;">Funcional</td>
-            <td></td>
-            <td class="td-funcional">Funcional</td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">19:00-20:00</th>
-            <td></td>
-            <td class="td-tkd">Taekwon-do</td>
-            <td></td>
-            <td></td>
-            <td>Taekwon-do</td>
-          </tr>
-          <tr>
-            <th scope="row">20:00-21:00</th>
-            <td class="td-funcional">Funcional</td>
-            <td></td>
-            <td class="td-funcional">Funcional</td>
-            <td class="td-funcional">Funcional</td>
-            <td></td>
-          </tr>
-          <tr>
-            <th scope="row">21:10-22:10</th>
-            <td class="td-tkd">Taekwon-do</td>
-            <td></td>
-            <td class="td-tkd">Taekwon-do</td>
-            <td class="td-tkd">Taekwon-do</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-    <!--
-
-        <div class="container-xl">
-            <div class="row">
-                <div class="col">
-                    <section id="horarios">
-                    <h1 class="mainTitle">Horarios</h1>
-                    <table border="" class="tabla">
-                        <thead> 
-                            <tr>
-                                <th>Hora</th>
-                                <th>Lunes</th>
-                                <th>Martes</th>
-                                <th>Miércoles</th>
-                                <th>Jueves</th>
-                                <th>Viernes</th>
-                            </tr>
-                        </thead> 
-                        <tr class="fila">
-                            <td>08:00 - 09:00</td>
-                            <td>Funcional</td>
-                            <td>TKD</td>
-                            <td>Funcional</td>
-                            <td>TKD</td>
-                            <td>Funcional</td>
-                        </tr>
-                        <tr>
-                            <td>09:00 - 10:00</td>
-                            <td>Funcional</td>
-                            <td></td>
-                            <td>Funcional</td>
-                            <td></td>
-                            <td>Funcional</td>
-                        </tr>
-                        <tr class="fila">
-                            <td>10:00 - 11:00</td>
-                            <td>Funcional</td>
-                            <td>TKD</td>
-                            <td>Funcional</td>
-                            <td>TKD</td>
-                            <td>Funcional</td>
-                        </tr>
-                        <tr>
-                            <td>11:00 - 12:00</td>
-                            <td>Funcional</td>
-                            <td></td>
-                            <td>Funcional</td>
-                            <td></td>
-                            <td>Funcional</td>
-                        </tr>
-                        <tr class="fila">
-                            <td>19:00 - 20:00</td>
-                            <td>Funcional</td>
-                            <td>TKD</td>
-                            <td>Funcional</td>
-                            <td>TKD</td>
-                            <td>Funcional</td>
-                        </tr>
-                        <tr>
-                            <td>20:00 - 21:00</td>
-                            <td>Funcional</td>
-                            <td></td>
-                            <td>Funcional</td>
-                            <td></td>
-                            <td>Funcional</td>
-                        </tr>
-                        <tr class="fila">
-                            <td>21:00 - 22:00</td>
-                            <td>TKD</td>
-                            <td>TKD</td>
-                            <td>TKD</td>
-                            <td>TKD</td>
-                            <td>TKD</td>
-                        </tr>
-                    </table>
-                    <div class="horario">
-                        <p><a href="contacto.html">Consultar por clases personalizadas y mas horarios!!</a></p> 
-                    </div>  
-                </section>
-            </div>
-        </div>
-    </div>
---> 
-    <footer class="footer">
+    <section class="table-container">
+        <h1 class="mainTitle">Horarios</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Hora</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Hora" class="hora">08:00 - 09:00</td>
+                    <td class="td-oculto"></td>
+                    <td data-label="Martes">Funcional</td>
+                    <td class="td-oculto"></td>
+                    <td data-label="Jueves">Funcional</td>
+                    <td class="td-oculto"></td>
+                </tr>
+                <tr>
+                    <td data-label="Hora" class="hora">19:00 - 20:00</td>
+                    <td class="td-oculto"></td>
+                     <td class="td-oculto"></td>
+                    <td data-label="Miercoles">Taekwon-do</td>
+                    <td class="td-oculto"></td>
+                    <td data-label="Viernes">Taekwon-do</td>
+                </tr>
+                <tr>
+                    <td data-label="Hora" class="hora">20:00 - 21:00</td>
+                    <td data-label="Lunes">Funcional</td>
+                    <td data-label="Miercoles">Funcional</td>
+                    <td data-label="Jueves">Funcional</td>
+                    <td class="td-oculto"></td>
+                </tr>
+                <tr>
+                    <td data-label="Hora" class="hora">21:10 - 22:10</td>
+                    <td data-label="Lunes">Taekwon-do</td>
+                    <td class="td-oculto"></td>
+                    <td data-label="Miercoles">Taekwon-do</td>
+                    <td data-label="Jueves">Taekwon-do</td>
+                    <td class="td-oculto"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer class="footer bottom">
         <div class="footer-cont">
             <h3>Huargo Academy</h3>
             <p>#Crush your goals</p>
             <ul class="socials">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/huargoacademy/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/huargoacademy/"><i class="fa fa-instagram"></i></a></li>
             </ul>           
         </div>
         <div class="footer-copy">

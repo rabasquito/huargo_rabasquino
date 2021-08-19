@@ -2,7 +2,7 @@ body {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .contenedor {
@@ -16,7 +16,7 @@ img {
 
 /*Estilo de los titulos principales */
 .mainTitle {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 80px;
   text-align: center;
   margin-top: 50px;
@@ -66,7 +66,7 @@ header {
 
 a.sombra:hover {
   background: #da1c1c;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .checkbtn {
@@ -102,7 +102,7 @@ a.sombra:hover {
 
 .sloganDescripcion {
   position: absolute;
-  font-family: 'Staatliches', sans-serif;
+  font-family: "Staatliches", sans-serif;
   color: #fff;
   text-align: center;
   transform: translateX(-50%) translateY(-50%);
@@ -132,7 +132,7 @@ a.sombra:hover {
 
 .boton:hover {
   background: #da1c1c;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .actividades {
@@ -180,55 +180,72 @@ a.sombra:hover {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
-  font-family: 'Staatliches', sans-serif;
+  font-family: "Staatliches", sans-serif;
 }
 
 /*Horarios*/
+.table-container {
+  padding: 0 10%;
+  margin: 40px auto;
+}
+
 .table {
-  margin-top: 50px;
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.td-funcional {
-  background: #000;
+.table thead {
+  background-color: #000;
 }
 
-.td-tkd {
-  background: #da1c1c;
-  color: #000;
-}
-
-.tabla {
-  font-family: 'Roboto', sans-serif;
-  font-size: 35px;
-  margin: auto;
-}
-
-th {
-  background: #000;
+.table thead tr th {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.35;
   color: #fff;
+  opacity: 1;
+  padding: 12px;
+  vertical-align: top;
+  border: 1px solid #9b9b9b;
 }
 
-.fila {
-  background: #9b9b9b;
-}
-
-#horarios {
-  margin-top: 50px;
-}
-
-.horario {
-  text-align: center;
-}
-
-.horario p a {
-  color: #000;
-  font-family: 'Roboto', sans-serif;
+.table tbody tr td {
   font-size: 20px;
-  text-decoration: none;
-  font-weight: bold;
+  font-weight: normal;
+  letter-spacing: 0.35;
+  background-color: #fff;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #9b9b9b;
 }
 
 /*Galeria*/
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #03afff;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(200px, auto);
+  gap: 20px;
+  padding: 60px;
+  grid-auto-flow: dense;
+}
+
 .slide {
   margin-top: 10px;
 }
@@ -237,32 +254,13 @@ th {
   height: 65vh;
 }
 
-#galeria {
-  background-image: url(../images/slogan.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 940px;
+/*Actividades*/
+.card-group {
+  margin: 100px 200px 10px 200px;
 }
 
-.galeria {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.galeria img {
-  width: 20%;
-  height: 300px;
-  margin: 10px;
-  border: 2px solid black;
-}
-
-/*Shop*/
-.shop {
-  height: 800px;
-  width: auto;
+.card-group .card {
+  margin: 0 10px;
 }
 
 /*Contacto*/
@@ -290,7 +288,8 @@ th {
   border-radius: 10px;
 }
 
-input, textarea {
+input,
+textarea {
   border: none;
   resize: none;
   outline: none;
@@ -301,7 +300,8 @@ input, textarea {
   border-bottom: 1px solid #9b9b9b;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-bottom: #da1c1c;
 }
 
@@ -313,6 +313,10 @@ input:focus, textarea:focus {
   width: 100%;
   color: #f6f6f6;
   padding-top: 40px;
+}
+
+.footer.bottom {
+  bottom: 0;
 }
 
 .footer-cont {
@@ -348,7 +352,7 @@ input:focus, textarea:focus {
 .socials a {
   text-decoration: none;
   color: #fff;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .socials a:hover i {
@@ -381,26 +385,104 @@ input:focus, textarea:focus {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .checkbtn {
-    display: block;
-  }
-  ul {
+@media only screen and (max-width: 963px) {
+  #menu ul {
     position: fixed;
     width: 100%;
-    top: 34px;
+    top: 50px;
     left: 0;
     line-height: 50px;
     text-align: center;
     background: #1b1a1a;
+    padding: 0px;
   }
-  #menu ul li a {
-    display: block;
+  #menu ul li {
+    margin: 0px;
+    display: inline;
+    width: 50px;
+  }
+  .mainTitle {
+    margin-top: 100px;
+  }
+  #formulario {
+    width: 80%;
+    height: 70%;
+  }
+  .card {
+    display: inherit;
+  }
+  .card-group {
+    margin: 10px 20px 10px 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .checkbtn {
+    display: none;
+  }
+  .grid-container {
+    padding: unset;
   }
   .actividades .actividadesGrid {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: 100%;
+  }
+  .wide {
+    grid-column: span 2;
+  }
+  .tall {
+    grid-row: span 2;
+  }
+  .wide {
+    grid-column: span 2;
+  }
+  .tall {
+    grid-row: span 2;
+  }
+  .table thead {
+    display: none;
+  }
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+  .table.hora,
+  .table tbody.hora,
+  .table tr.hora,
+  .table td.hora {
+    background: #000;
+    color: #fff;
+  }
+  .table.td-oculto,
+  .table tbody.td-oculto,
+  .table tr.td-oculto,
+  .table td.td-oculto {
+    display: none;
+  }
+  .table tr {
+    margin-bottom: 15px;
+  }
+  .table tbody tr td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: left;
+  }
+  .footer.bottom {
+    bottom: inherit;
   }
 }
 
